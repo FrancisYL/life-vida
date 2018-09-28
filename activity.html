@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>活动</title>
+
+        <!-- CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <!-- Style -->
+    </head>
+
+    <body>
+        <!-- 登陆/注册下拉菜单 -->
+        <ul id="login_dropdown_id" class="dropdown-content">
+            <li><a href="login.html">登陆</a></li>
+            <li><a href="register.html">注册</a></li>
+        </ul>
+
+
+        <!-- 导航条部分 -->
+        <nav id="navigation_id" class="teal lighten-1" role="navigation">
+            <a id="logo_id" class="left brand-logo white-text" style="margin-left: 30px;" href="index.html">Life Vida</a>
+            <a id="datetime_id" class="right" style="margin-right: 30px"></a>
+            <div class="nav-wrapper container">
+                <form class="left">
+                    <div class="input-field">
+                        <input id="search_id" type="search" required>
+                        <label class="label-icon" for="search_id"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+                <ul class="right">
+                    <li><a class="tooltipped white-text" data-position="bottom" data-delay="50" data-tooltip="告诉我们" href="#">联系我们</a></li>
+                    <li><a class="tooltipped white-text" data-position="bottom" data-delay="50" data-tooltip="创建新活动" href="#">发布活动</a></li>
+                    <li><a class="tooltipped white-text" data-position="bottom" data-delay="50" data-tooltip="加入活动" href="activity.html">参与活动</a></li>
+                    <li><a class="dropdown-button white-text" href="login.html" data-activates="login_dropdown_id">登陆/注册<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="row">
+
+            <div id="all" class="col l12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="img/activity_sport2.jpeg">
+                                    <span class="card-title">秦皇岛国际马拉松赛</span>
+                                </div>
+                                <div class="card-content">
+                                    <br>
+                                        时间：2017年5月14日<br/>
+                                        地点：秦皇岛奥体中心<br/>
+                                        人数：1000人
+                                    </p>
+                                </div>
+                                <div class="card-action center-align">
+                                    <button class="btn">立即报名</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="img/activity_travel1.jpeg">
+                                    <span class="card-title">北戴河一日游</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        时间：2017年5月21日<br/>
+                                        地点：东北大学秦皇岛分校南门<br/>
+                                        人数：30人
+                                    </p>
+                                </div>
+                                <div class="card-action center-align">
+                                    <button class="btn">立即报名</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="img/activity_food1.jpg">
+                                    <span class="card-title">下午茶糕点制作</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        时间：2017年5月23日<br/>
+                                        地点：泰山路黑咖骑士<br/>
+                                        人数：10人
+                                    </p>
+                                </div>
+                                <div class="card-action center-align">
+                                    <button class="btn">立即报名</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+    </body>
+</html>

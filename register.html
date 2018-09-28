@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>注册</title>
+
+        <!-- CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <!-- Style -->
+    </head>
+
+    <body>
+
+        <!-- 登陆/注册下拉菜单 -->
+        <ul id="login_dropdown_id" class="dropdown-content">
+            <li><a href="login.html">登陆</a></li>
+            <li><a href="register.html">注册</a></li>
+        </ul>
+
+        <!-- 参与活动下拉菜单 -->
+        <ul id="activity_dropdown_id" class="dropdown-content">
+            <li><a href="#!">旅行</a></li>
+            <li><a href="#!">美食</a></li>
+            <li><a href="#!">运动</a></li>
+            <li><a href="#!">休闲</a></li>
+        </ul>
+
+
+        <!-- 导航条部分 -->
+        <nav id="navigation_id" class="teal lighten-1" role="navigation">
+            <a id="logo_id" class="left brand-logo white-text" style="margin-left: 30px;" href="index.html">Life Vida</a>
+            <a id="datetime_id" class="right" style="margin-right: 30px"></a>
+            <div class="nav-wrapper container">
+                <form class="left">
+                    <div class="input-field">
+                        <input id="search_id" type="search" required>
+                        <label class="label-icon" for="search_id"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+                <ul class="right">
+                    <li><a class="tooltipped white-text" data-position="bottom" data-delay="50" data-tooltip="告诉我们" href="#">联系我们</a></li>
+                    <li><a class="tooltipped white-text" data-position="bottom" data-delay="50" data-tooltip="创建新活动" href="#">发布活动</a></li>
+                    <li><a class="dropdown-button white-text" href="activity.html" data-activates="activity_dropdown_id">参与活动<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-button white-text" href="login.html" data-activates="login_dropdown_id">登陆/注册<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+    </body>
+</html>

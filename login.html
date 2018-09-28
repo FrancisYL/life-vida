@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>注册</title>
+
+        <!-- CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <!-- Style -->
+    </head>
+
+    <body>
+        <!-- 登陆/注册下拉菜单 -->
+        <ul id="login_dropdown_id" class="dropdown-content">
+            <li><a href="login.html">登陆</a></li>
+            <li><a href="register.html">注册</a></li>
+        </ul>
+
+
+        <!-- 导航条部分 -->
+        <nav id="navigation_id" class="teal lighten-1" role="navigation">
+            <a id="logo_id" class="left brand-logo white-text" style="margin-left: 30px;" href="index.html">Life Vida</a>
+            <a id="datetime_id" class="right" style="margin-right: 30px"></a>
+            <div class="nav-wrapper container">
+                <form class="left">
+                    <div class="input-field">
+                        <input id="search_id" type="search" required>
+                        <label class="label-icon" for="search_id"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+                <ul class="right">
+                    <li><a class="tooltipped white-text" data-position="bottom" data-delay="50" data-tooltip="告诉我们" href="#">联系我们</a></li>
+                    <li><a class="tooltipped white-text" data-position="bottom" data-delay="50" data-tooltip="创建新活动" href="#">发布活动</a></li>
+                    <li><a class="tooltipped white-text" data-position="bottom" data-delay="50" data-tooltip="加入活动" href="activity.html">参与活动</a></li>
+                    <li><a class="dropdown-button white-text" href="login.html" data-activates="login_dropdown_id">登陆/注册<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- 登陆界面部分 -->
+        <div class="container" style="width: 80%; margin-top: 5%">
+            <div class="card-panel">
+                <div class="row">
+                    <div class="col l6" style="margin-top: 3%">
+                        <div class="carousel carousel-slider center" data-indicators="true">
+                            <div class="carousel-item white-text">
+                                <img src="img/index_travel3.jpg">
+                            </div>
+                            <div class="carousel-item white-text">
+                                <img src="img/index_food1.jpg">
+                            </div>
+                            <div class="carousel-item white-text">
+                                <img src="img/index_sport2.jpg">
+                            </div>
+                            <div class="carousel-item white-text">
+                                <img src="img/index_leisure1.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l6">
+                        <form>
+                            <h5 class="center"  style="margin-top: 50px">欢迎来到Life Vida</h5>
+                            <div class="input-field col l10 offset-l1">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="user_id" type="text">
+                                <label for="user_id">用户名</label>
+                            </div>
+                            <div class="input-field col l10 offset-l1">
+                                <i class="material-icons prefix">lock</i>
+                                <input id="password_id" type="password"  onblur="check()">
+                                <label for="password_id">密码</label>
+                            </div>
+                            <div class="col l10 offset-l1 center-align" style="margin-top: 10px">
+                                <span>还没有账号？<a href="register.html">立即注册</a></span>
+                            </div>
+                            <div class="col l10 offset-l1" style="margin-top: 25px">
+                                <button class="btn waves-effect waves-light" style="width: 370px" type="submit">登陆</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 脚注部分 -->
+        <div style="background-color: #546e7a; margin-top: 135px">
+            <div class="center white-text" style="padding-top: 10px; padding-bottom: 10px">Made by Yian</div>
+        </div>
+
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+    </body>
+</html>
